@@ -1,0 +1,86 @@
+/*
+grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "header  header"
+      "nav     nav"
+      "sidebar content"
+      "ad      footer";
+*/
+body {
+  font-size: 14px;
+  height: 100%;
+  padding: 0 0 0;
+  margin: 0;
+  margin-top: 0px;
+  background-color: #F7F7F7;
+}
+.nav-contain {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-template-rows: 93px;
+}
+.intro{
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: repeat(4, [col-start] 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  /*grid-template-rows: 466px;*/
+
+}
+#nav-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+  color: #633126;
+}
+#logo{
+  font-size: 20px;
+  font-weight: bold;
+}
+#name{
+  font-size: 96px;
+}
+/*TODO: does this work??s*/
+#intro-left-section {
+  margin-top: 93px;
+  margin-bottom: 93px;
+  margin-right: 20px;
+  padding-right: 20px;
+  /*2em instead of pixels*/
+}
+
+.case-studies{
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin: 3em;
+  
+}
+.studies{
+  height: 200px;
+  display: grid;
+  margin: 20px;
+  grid-template-rows: repeat(1, 1fr);
+  background-color: #F0BB8C;
+
+}
+.case-format{
+  display: flex;
+  flex-wrap: wrap;
+  
+  margin: 30px;
+  color: brown;
+
+}
+.case{
+  justify-content: center;
+  width: 40%;
+  margin-left: 2em;
+  padding-right: 3em;
+}
+.case-one{
+  background-color: #F7F7F7;
+}
